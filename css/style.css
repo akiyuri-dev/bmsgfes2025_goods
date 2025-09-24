@@ -1,0 +1,30 @@
+#result-erea {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #106635;
+    padding: 8px;
+    border-radius: 30px;
+    color: aliceblue;
+}
+.dxtn{
+    color: #106635;
+}
+.back-dxtn{
+    color: aliceblue;
+    background-color: #106635;
+}
+
+.num_hold{
+    color: rgb(5, 97, 72);
+    font-size: large;
+    font-weight: bold;
+    padding: 8px;
+}
+.liner{
+    border: rgb(4, 255, 188);
+    border-bottom: solid;
+}
+.r_t{
+    padding-top: 5rem;
+}

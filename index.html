@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(ファン作成)BMSG FES'25グッズ計算機</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/html2canvas.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQHT4987VM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WQHT4987VM');
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-dark back-dxtn fixed-top" role="navigation">
+        <div class="container-fluid">
+        <a href="/" id="top-text" class="navbar-brand">(ファン作成)BMSG FES'25グッズ計算機</a>
+        <div>
+        <div class="d-flex align-items-center"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+    </div>
+    </nav>
+    </div>
+    <div class="row r_t">
+        <div>
+            <span>作成：あき(<a href="https://x.com/WasshoiXi44574" target="_blank">@WasshoiXi44574</a>)</span>
+            <br><br>
+        </div>
+    <div id="capture" class="col-lg-10 offset-lg-2">
+        <div>
+            <form class="form-group" uk-grid>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 Tシャツ</h5><div class="d-flex flex-row-reverse">￥4,000</div></div>
+                    <div class="liner"><div>S</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(0);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="t-shirts"><button type="button" class="btn btn-secondary" onclick="plus(0);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>M</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(1);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="t-shirts"><button type="button" class="btn btn-secondary" onclick="plus(1);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>L</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(2);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="t-shirts"><button type="button" class="btn btn-secondary" onclick="plus(2);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>XL</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(3);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="t-shirts"><button type="button" class="btn btn-secondary" onclick="plus(3);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 シリコンバンド</h5><div class="d-flex flex-row-reverse">￥1,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(4);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="band"><button type="button" class="btn btn-secondary" onclick="plus(4);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 フォンストラップ（BMSG）</h5><div class="d-flex flex-row-reverse">￥1,300</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(5);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="p_strap"><button type="button" class="btn btn-secondary" onclick="plus(5);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BBMSG FES'25 シューレース</h5><div class="d-flex flex-row-reverse">￥1,000</div><br></div>
+                    <div class="liner"><div>BMSG</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(6);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="sr"><button type="button" class="btn btn-secondary" onclick="plus(6);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>BE:FIRST</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(7);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="sr"><button type="button" class="btn btn-secondary" onclick="plus(7);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>MAZZEL</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(8);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="sr"><button type="button" class="btn btn-secondary" onclick="plus(8);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 シューチャームセット（BMSG）</h5><div class="d-flex flex-row-reverse">￥1,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(9);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="scs"><button type="button" class="btn btn-secondary" onclick="plus(9);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 メッシュボーチ（BMSG）</h5><div class="d-flex flex-row-reverse">￥1,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(10);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="mp"><button type="button" class="btn btn-secondary" onclick="plus(10);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 OFFICIAL LIGHT BAND</h5><div class="d-flex flex-row-reverse">￥2,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(11);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="olb"><button type="button" class="btn btn-secondary" onclick="plus(11);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 ポンチョ</h5><div class="d-flex flex-row-reverse">￥10,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(12);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="poncho"><button type="button" class="btn btn-secondary" onclick="plus(12);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 サファリハット</h5><div class="d-flex flex-row-reverse">￥4,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(13);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="sh"><button type="button" class="btn btn-secondary" onclick="plus(13);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 ソックス</h5><div class="d-flex flex-row-reverse">￥2,000</div><br></div>
+                    <div class="liner"><div>23-25cm</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(14);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="f_s"><button type="button" class="btn btn-secondary" onclick="plus(14);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>25-27cm</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(15);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="f_s"><button type="button" class="btn btn-secondary" onclick="plus(15);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG ソックス</h5><div class="d-flex flex-row-reverse">￥1,500</div><br></div>
+                    <div class="liner"><div>23-25cm</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(16);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_s"><button type="button" class="btn btn-secondary" onclick="plus(16);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>25-27cm</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(17);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_s"><button type="button" class="btn btn-secondary" onclick="plus(17);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG タオル</h5><div class="d-flex flex-row-reverse">￥2,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(18);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_t"><button type="button" class="btn btn-secondary" onclick="plus(18);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 カスタムトートバッグ</h5><div class="d-flex flex-row-reverse">￥5,900</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(19);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="ctb"><button type="button" class="btn btn-secondary" onclick="plus(19);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 カスタムクリアフラットミニポーチ</h5><div class="d-flex flex-row-reverse">￥2,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(20);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="ccfmp"><button type="button" class="btn btn-secondary" onclick="plus(20);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 カスタムフラットミニポーチ</h5><div class="d-flex flex-row-reverse">￥2,600</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(21);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="cfmp"><button type="button" class="btn btn-secondary" onclick="plus(21);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 カスタムキャリーポーチ</h5><div class="d-flex flex-row-reverse">￥2,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(22);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="ccp"><button type="button" class="btn btn-secondary" onclick="plus(22);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 カスタムペットボトルホルダー</h5><div class="d-flex flex-row-reverse">￥2,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(23);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="cph"><button type="button" class="btn btn-secondary" onclick="plus(23);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 カスタムショルダーストラップ</h5><div class="d-flex flex-row-reverse">￥2,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(24);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="css"><button type="button" class="btn btn-secondary" onclick="plus(24);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 スカーフ</h5><div class="d-flex flex-row-reverse">￥2,800</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(25);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="skaf"><button type="button" class="btn btn-secondary" onclick="plus(25);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 レジャーシート</h5><div class="d-flex flex-row-reverse">￥1,800</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(26);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="r_sheet"><button type="button" class="btn btn-secondary" onclick="plus(26);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 スナック（かりんとう）</h5><div class="d-flex flex-row-reverse">￥1,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(27);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="karin"><button type="button" class="btn btn-secondary" onclick="plus(27);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 ランダムウェーブキーリング</h5><div class="d-flex flex-row-reverse">￥600</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(28);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="rwk"><button type="button" class="btn btn-secondary" onclick="plus(28);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG FES'25 ランダムアクリルカラビナ</h5><div class="d-flex flex-row-reverse">￥700</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(29);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="rac"><button type="button" class="btn btn-secondary" onclick="plus(29);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BAD LOVE バンダナ</h5><div class="d-flex flex-row-reverse">￥2,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(30);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_b"><button type="button" class="btn btn-secondary" onclick="plus(30);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BAD LOVE アクセサリーケース</h5><div class="d-flex flex-row-reverse">￥3,800</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(31);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_ac"><button type="button" class="btn btn-secondary" onclick="plus(31);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BAD LOVE ヘアピンセット</h5><div class="d-flex flex-row-reverse">￥3,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(32);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_hps"><button type="button" class="btn btn-secondary" onclick="plus(32);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BAD LOVE ブレスレット</h5><div class="d-flex flex-row-reverse">￥3,000</div><br></div>
+                    <div class="liner"><div>CHIKA</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(33);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(33);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>NAOKO</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(34);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(34);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>JISOO</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(35);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(35);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>YURI</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(36);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(36);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>MOMOKA</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(37);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(37);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>KOHARU</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(38);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(38);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>MAHINA</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(39);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_br"><button type="button" class="btn btn-secondary" onclick="plus(39);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-primary rounded-pill">FES会場</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE トラックジャージ トップス</h5><div class="d-flex flex-row-reverse">￥8,000</div></div>
+                    <div class="liner"><div>M</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(40);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_t_t"><button type="button" class="btn btn-secondary" onclick="plus(40);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>L</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(41);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_t_t"><button type="button" class="btn btn-secondary" onclick="plus(41);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>XL</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(42);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_t_t"><button type="button" class="btn btn-secondary" onclick="plus(42);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE トラックジャージ ボトムス</h5><div class="d-flex flex-row-reverse">￥7,500</div></div>
+                    <div class="liner"><div>M</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(43);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_t_b"><button type="button" class="btn btn-secondary" onclick="plus(43);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>L</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(44);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_t_b"><button type="button" class="btn btn-secondary" onclick="plus(44);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>XL</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(45);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_t_b"><button type="button" class="btn btn-secondary" onclick="plus(45);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE ランダムフォトカード</h5><div class="d-flex flex-row-reverse">￥900</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(46);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_rpc"><button type="button" class="btn btn-secondary" onclick="plus(46);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE ランダムアクリルスタンド</h5><div class="d-flex flex-row-reverse">￥1,100</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(47);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_rac"><button type="button" class="btn btn-secondary" onclick="plus(47);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE ポストカードセット</h5><div class="d-flex flex-row-reverse">￥1,500</div></div>
+                    <div class="liner"><div>A</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(48);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_ps"><button type="button" class="btn btn-secondary" onclick="plus(48);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    <div class="liner"><div>B</div><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(49);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_ps"><button type="button" class="btn btn-secondary" onclick="plus(49);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE ステッカーセット</h5><div class="d-flex flex-row-reverse">￥1,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(50);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_sc"><button type="button" class="btn btn-secondary" onclick="plus(50);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>THE LAST PIECE コレクトブック</h5><div class="d-flex flex-row-reverse">￥2,600</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(51);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="l_cb"><button type="button" class="btn btn-secondary" onclick="plus(51);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG ピンバッチセット</h5><div class="d-flex flex-row-reverse">￥2,000</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(52);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="bm_p"><button type="button" class="btn btn-secondary" onclick="plus(52);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG ナップザック</h5><div class="d-flex flex-row-reverse">￥1,800</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(53);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_nz"><button type="button" class="btn btn-secondary" onclick="plus(53);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG ボールキャップ YL</h5><div class="d-flex flex-row-reverse">￥3,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(54);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_bc"><button type="button" class="btn btn-secondary" onclick="plus(54);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                    <div class="piece">
+                    <div><h5>BMSG タオル YL</h5><div class="d-flex flex-row-reverse">￥2,500</div><br></div>
+                    <div class="liner"><div class="d-flex flex-row-reverse"><button type="button" class="btn btn-secondary" onclick="minus(55);">-</button><span class="num_hold">0</span><input class="form-control" type="hidden" value="0" name="b_tw"><button type="button" class="btn btn-secondary" onclick="plus(55);">+</button><div class="d-flex align-items-center"><span class="badge text-bg-danger rounded-pill">SHIBUYA TSUTAYA</span>&nbsp;</div><div class="d-flex align-items-center"><span class="badge text-bg-success rounded-pill">ダイバーシティ</span>&nbsp;</div></div></div>
+                    </div>
+                </form>
+        </div>
+
+        <div id="result-erea" class="text-center">
+
+        </div>
+        <div id="result" class="text-center mb-3"></div>
+    </div>
+    <div>
+        <button id="imgmk" onclick="capture();" class="btn btn-info">画像を作成</button>
+        <br>
+        <a id="sshot" href=""><button class="btn btn-warning dxtn">長押しして画像ダウンロード</button></a>
+    </div>
+    </div>
+    </div>
+    <script src="./js/calc.js"></script>
+</body>
+</html>
