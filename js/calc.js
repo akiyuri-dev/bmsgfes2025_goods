@@ -276,11 +276,11 @@ function capture() {
         //document.body.appendChild(canvas)
         document.getElementById("sshot").style.display = "none";
         document.getElementById("imgmk").style.display = "none";
-        document.getElementById("result-erea").style.display = "none";
+        document.getElementById("result").style.display = "none";
         var imgData = canvas.toDataURL();
         document.getElementById("sshot").style.display = "block";
         document.getElementById("imgmk").style.display = "block";
-        document.getElementById("result-erea").style.display = "block";
+        document.getElementById("result").style.display = "block";
         document.getElementById("sshot").href = imgData;
         document.getElementById("imgmk").innerHTML = "画像を再作成";
         for(let i = 0; i < pieces.length; i++){
